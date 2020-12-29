@@ -2,9 +2,9 @@
 
 const AWS = require('aws-sdk');
 
-const credentials = new AWS.SharedIniFileCredentials({profile: process.env.AWS_PROFILE ?? 'default'});
+const credentials = new AWS.SharedIniFileCredentials({profile: process.env.AWS_PROFILE || 'default'});
 AWS.config.credentials = credentials;
-AWS.config.region = process.env.AWS_REGION ?? 'us-east-1';
+AWS.config.region = process.env.AWS_REGION || 'us-east-1';
 
 const lambda = new AWS.Lambda();
 

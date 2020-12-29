@@ -1,5 +1,13 @@
 {
+  "name": "remove-lambda-eventbridge",
+  "version": "1.0.0",
+  "description": "Remove AWS EventBridge Rules, Targets, and Lambda Functions.",
+  "main": "main.js",
+  "repository": "git@github.com:ebi-yade/remove-lambda-eventbridge",
+  "author": "ebi-exp <github@mail.ebi-yade.com>",
+  "license": "MIT",
+  "private": false,
   "dependencies": {
-    "aws-sdk": "^2.817.0"
+    "aws-sdk": "^2.818.0"
   }
 }
